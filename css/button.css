@@ -1,0 +1,93 @@
+.button {
+    height: 50px;
+    color: #343A40;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #023B6D;
+  }
+  
+  .button .b-span {
+    z-index: 33;
+  }
+  
+  .button::after {
+    height: 100%;
+    width: 0%;
+    content: "";
+    position: absolute;
+    background-color: #023B6D;
+    z-index: -2;
+    transition: all 0.3s linear;
+    top: 0px;
+    left: 0px;
+  }
+  
+  .button:hover::after {
+    width: 100%;
+  }
+  
+  .button:hover .b-span {
+    color: white; /* Change text color to white on hover */
+  }
+  
+  @media (max-width: 705px) {
+    .buttons {
+      flex-direction: row;
+      top: 90%;
+      left: 0px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      background-color: #343035;
+      backdrop-filter: blur(50px);
+      height: 10%;
+    }
+  }
+  
+  .theme-button {
+    height: 60px;
+    width: 60px;
+    background-color: gray;
+    top: 2%;
+    left: 4%;
+  }
+  
+  .buton {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    color: black;
+    border-radius: 0px;
+    overflow: hidden;
+    background-color: darkgray;
+    transition: all 0.1s linear;
+  }
+  
+  .buton .icon {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .buton .text {
+    display: inline-block;
+    font-size: 20px;
+  }
+  
+  .buton:hover {
+    background-color: #023B6D;
+    color: white; /* Change text color to white on hover */
+  }
+  
+  @media (min-width: 705px) {
+    .buton:hover {
+      width: 140px;
+      display: flex;
+      align-items: center;
+      background-color: #023B6D;
+    }
+  }
+  
