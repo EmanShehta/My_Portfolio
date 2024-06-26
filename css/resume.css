@@ -3,7 +3,7 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
-body {
+ body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
   color: #868e96; }
@@ -225,3 +225,82 @@ a {
       height: 100%;
     }
     
+    .scrolling-wrapper {
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    color: white;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+   
+   
+    
+    .card-block{
+      height: 300px;
+      background-color: #fff;
+      border: none;
+      background-position: center;
+      background-size: cover;
+      transition: all 0.2s ease-in-out !important;
+      border-radius: 24px;
+      &:hover{
+        transform: translateY(-5px);
+        box-shadow: none;
+        opacity: 0.9;
+      }
+    }
+    
+    
+    .projects-container {
+      overflow: auto;
+      margin: 50px -15px; /* Adjust as needed */
+  }
+  
+  .cards {
+      display: flex;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+      -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
+      scrollbar-width: none; /* Hide scrollbar in Firefox */
+      padding-bottom: 15px; /* Add padding to prevent edge cutoff */
+      padding-left: 15%;
+  }
+  
+  /* Hide scrollbar for WebKit (Chrome, Safari) */
+  .cards::-webkit-scrollbar {
+      display: none;
+  }
+  
+  .card {
+      width: 100%; /* Adjust width as needed */
+                margin-left: 30%;
+
+  }
+  
+  /* Media query for mobile screens */
+  @media (max-width: 767px) {
+      .cards {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+        -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
+        scrollbar-width: none; /* Hide scrollbar in Firefox */
+        padding-left: 175%;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+
+      }
+  
+      /* Hide scrollbar for horizontal scrolling */
+      .cards::-webkit-scrollbar {
+          display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
+      }
+
+  
+      .card {
+          width: 100%; /* Adjust width as needed */
+      }
+  }
+  
