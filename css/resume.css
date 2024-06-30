@@ -256,7 +256,7 @@ a {
     
     .projects-container {
       overflow: auto;
-      margin: 50px -15px; /* Adjust as needed */
+      margin: 10 -15px; /* Adjust as needed */
   }
   
   .cards {
@@ -265,7 +265,6 @@ a {
       -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
       -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
       scrollbar-width: none; /* Hide scrollbar in Firefox */
-      padding-bottom: 15px; /* Add padding to prevent edge cutoff */
       padding-left: 15%;
   }
   
@@ -288,8 +287,7 @@ a {
         -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
         -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
         scrollbar-width: none; /* Hide scrollbar in Firefox */
-        padding-left: 175%;
-        scrollbar-width: none; /* Hide scrollbar for Firefox */
+        padding-left: 180%;
 
       }
   
@@ -301,6 +299,9 @@ a {
   
       .card {
           width: 100%; /* Adjust width as needed */
+          margin-left: 35%;
+          padding: auto;
+
       }
   }
   
