@@ -281,27 +281,26 @@ a {
   
   /* Media query for mobile screens */
   @media (max-width: 767px) {
-      .cards {
+    .cards {
         display: flex;
         overflow-x: auto; /* Enable horizontal scrolling */
         -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
         -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
         scrollbar-width: none; /* Hide scrollbar in Firefox */
-        padding-left: 180%;
+        padding-left: 0; /* Adjust padding as needed */
+    }
 
-      }
+    /* Hide scrollbar for horizontal scrolling */
+    .cards::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
+    }
+
+    .card {
+        width: 100%; /* Adjust width as needed */
+        margin-left: 0; /* Adjust margin as needed */
+        padding: auto; /* Adjust padding as needed */
+    }
+}
+
   
-      /* Hide scrollbar for horizontal scrolling */
-      .cards::-webkit-scrollbar {
-          display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
-      }
-
-  
-      .card {
-          width: 100%; /* Adjust width as needed */
-          margin-left: 35%;
-          padding: auto;
-
-      }
-  }
   
