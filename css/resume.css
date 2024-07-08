@@ -260,7 +260,7 @@ a {
     .projects-container {
       overflow: auto;
       
-        margin: 50px 0 50px 15px; /* Top, Right, Bottom, Left */
+        margin: 15px 0 15px 15px; /* Top, Right, Bottom, Left */
     
       }
   
@@ -281,7 +281,7 @@ a {
   .card {
     width: 250px; /* Adjust width as needed */
 
-      padding-left: 25px;
+      margin-left: 100px;
 
   }
   
