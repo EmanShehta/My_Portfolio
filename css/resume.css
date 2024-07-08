@@ -258,7 +258,7 @@ a {
     
     .projects-container {
       overflow: auto;
-      margin: 15px 0; /* Top and Bottom margin */
+      margin: 15px 0 100px; /* Top and Bottom margin */
       
   }
   
@@ -276,11 +276,11 @@ a {
   }
   
 
-  p
+
   .card {
       flex: 0 0 auto; /* Allow cards to shrink and grow, but don't allow them to shrink below their intrinsic width */
       width: 250px; /* Adjust width as needed */
-      margin-left: 100px; /* Space between cards */
+      margin-left: 150px; /* Space between cards */
   }
   
   /* Media query for mobile screens */
