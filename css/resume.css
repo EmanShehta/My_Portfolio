@@ -268,7 +268,7 @@ a {
       -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
       -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
       scrollbar-width: none; /* Hide scrollbar in Firefox */
-      position: absolute;
+      position: relative;
 
   }
 
