@@ -266,7 +266,7 @@ a {
       -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
       scrollbar-width: none; /* Hide scrollbar in Firefox */
       padding-left: 15%;
-      padding-right: 15%;
+      padding-right: -45%;
   }
   
   /* Hide scrollbar for WebKit (Chrome, Safari) */
