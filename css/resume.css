@@ -269,6 +269,7 @@ a {
       -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
       scrollbar-width: none; /* Hide scrollbar in Firefox */
       position: initial;
+      padding-left: 5%;
 
   }
 
