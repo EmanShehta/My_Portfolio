@@ -280,7 +280,7 @@ a {
   
   .card {
       width: 100%; /* Adjust width as needed */
-                margin-left: 30%;
+      margin: 0px 0px 0px 15px; /* Top, Right, Bottom, Left */
 
   }
   
@@ -302,8 +302,8 @@ a {
 
     .card {
         width: 100%; /* Adjust width as needed */
-        margin-left: 0; /* Adjust margin as needed */
-        padding: auto; /* Adjust padding as needed */
+        margin: 0px 0px 0px 15px; /* Top, Right, Bottom, Left */
+
     }
 }
 
