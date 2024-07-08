@@ -279,9 +279,9 @@ a {
   }
   
   .card {
-    width: 250px; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
 
-      margin-left: 100px;
+      margin-left: 15px;
 
   }
   
