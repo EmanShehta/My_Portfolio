@@ -260,7 +260,7 @@ a {
     .projects-container {
       overflow: auto;
       
-        margin: 15px 0 15px 100px; /* Top, Right, Bottom, Left */
+        margin: 15px 0 15px 200px; /* Top, Right, Bottom, Left */
     
       }
   
