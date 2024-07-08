@@ -256,16 +256,13 @@ a {
       }
     }
     
-
     .projects-container {
       overflow: auto;
-      
-        margin: 15px 0 15px 250px; /* Top, Right, Bottom, Left */
-    
-      }
+      margin: 15px 0; /* Top and Bottom margin */
+  }
   
   .cards {
-     
+      display: flex;
       overflow-x: auto; /* Enable horizontal scrolling */
       -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
       -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
@@ -278,31 +275,27 @@ a {
   }
   
   .card {
-    width: 100%; /* Adjust width as needed */
-
-
+      flex: 0 0 auto; /* Allow cards to shrink and grow, but don't allow them to shrink below their intrinsic width */
+      width: 250px; /* Adjust width as needed */
+      margin-right: 15px; /* Space between cards */
   }
   
   /* Media query for mobile screens */
   @media (max-width: 767px) {
-    .cards {
-        display: flex;
-        overflow-x: auto; /* Enable horizontal scrolling */
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
-        -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
-        scrollbar-width: none; /* Hide scrollbar in Firefox */
-    }
-
-    /* Hide scrollbar for horizontal scrolling */
-    .cards::-webkit-scrollbar {
-        display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
-    }
-
-    .card {
-        width: 100%; /* Adjust width as needed */
-
-    }
-}
-
+      .cards {
+          display: flex;
+          overflow-x: auto; /* Enable horizontal scrolling */
+          -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+          -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
+          scrollbar-width: none; /* Hide scrollbar in Firefox */
+      }
   
+      /* Hide scrollbar for horizontal scrolling */
+      .cards::-webkit-scrollbar {
+          display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
+      }
   
+      .card {
+          width: 100%; /* Adjust width as needed */
+      }
+  }
