@@ -269,18 +269,16 @@ a {
       -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
       scrollbar-width: none; /* Hide scrollbar in Firefox */
   }
-  
+
   /* Hide scrollbar for WebKit (Chrome, Safari) */
   .cards::-webkit-scrollbar {
       display: none;
   }
-  
-
 
   .card {
       flex: 0 0 auto; /* Allow cards to shrink and grow, but don't allow them to shrink below their intrinsic width */
       width: 250px; /* Adjust width as needed */
-      margin-left: 150px; /* Space between cards */
+      padding: 150px; /* Space between cards */
   }
   
   /* Media query for mobile screens */
