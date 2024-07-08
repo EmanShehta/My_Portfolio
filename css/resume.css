@@ -265,7 +265,7 @@ a {
       }
   
   .cards {
-      display: flex;
+     
       overflow-x: auto; /* Enable horizontal scrolling */
       -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
       -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
