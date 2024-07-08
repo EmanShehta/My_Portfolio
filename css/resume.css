@@ -285,7 +285,11 @@ a {
   
   /* Media query for mobile screens */
   @media (max-width: 767px) {
-
+    .projects-container {
+      overflow: auto;
+      margin: 15px 0 160px; /* Top and Bottom margin */
+      
+  }
       .cards {
           display: flex;
           overflow-x: auto; /* Enable horizontal scrolling */
