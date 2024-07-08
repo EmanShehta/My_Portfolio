@@ -166,7 +166,8 @@
       position: relative;
       transition: all 0.4s ease;
       margin: 0 10px;
-  
+      min-height: 500px; /* Minimum height for the card */
+
       &:before {
         height: 190px;
         width: calc(100% + 100px);
@@ -235,6 +236,7 @@
           color: #666;
           height: 90px;
           transition: all 0.4s ease-out;
+          flex-grow: 1;
         }
   
         .pic {
@@ -260,6 +262,7 @@
         background: white;
         bottom: 4px;
         z-index: 1;
+        margin-top: 5px; /* Add space above the buttons */
   
         .btn {
           border: 0;

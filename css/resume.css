@@ -263,26 +263,65 @@ a {
   }
   
   .cards {
-      display: flex;
-      overflow-x: auto; /* Enable horizontal scrolling */
-      -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
-      -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
-      scrollbar-width: none; /* Hide scrollbar in Firefox */
-      position: initial;
-      padding-left: 13%;
-
-  }
-
-  /* Hide scrollbar for WebKit (Chrome, Safari) */
-  .cards::-webkit-scrollbar {
-      display: none;
-  }
-
-  .card {
-      flex: 0 0 auto; /* Allow cards to shrink and grow, but don't allow them to shrink below their intrinsic width */
-      width: 250px; /* Adjust width as needed */
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    position: initial;
+    justify-content: center; /* Center the cards */
+    gap: 10px; /* Add space between cards */
   }
   
+  .cards .card {
+    flex: 0 0 80%; /* Adjust width as needed */
+    margin-right: 20px; /* Space between cards */
+  }
+  
+  .cards .card:first-child {
+    margin-left: 5vw; /* Space from the left edge */
+  }
+  
+  .cards::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
+  }
+  
+  .card {
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #fff; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Box shadow */
+  }
+  
+  /* Media queries for different screen sizes */
+  @media (min-width: 1200px) {
+    .cards {
+      padding-left: 2vw;
+    }
+    .cards .card:first-child {
+      margin-left: 2vw;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .cards {
+      padding-left: 3vw;
+    }
+    .cards .card:first-child {
+      margin-left: 3vw;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .cards {
+      padding-left: 5vw;
+    }
+    .cards .card:first-child {
+      margin-left: 5vw;
+    }
+  }
   /* Media query for mobile screens */
   @media (max-width: 767px) {
     .projects-container {
