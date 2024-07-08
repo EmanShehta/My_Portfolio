@@ -269,7 +269,7 @@ a {
       -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
       scrollbar-width: none; /* Hide scrollbar in Firefox */
       position: initial;
-      padding-left: 10%;
+      padding-left: 13%;
 
   }
 
@@ -292,6 +292,8 @@ a {
           -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
           -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
           scrollbar-width: none; /* Hide scrollbar in Firefox */
+          position: initial;
+      padding-left: 13%;
       }
   
       /* Hide scrollbar for horizontal scrolling */
@@ -300,8 +302,7 @@ a {
       }
   
       .card {
-          width: 100%; /* Adjust width as needed */
-          margin-left: 100px; /* Space between cards */
-
-      }
+        flex: 0 0 auto; /* Allow cards to shrink and grow, but don't allow them to shrink below their intrinsic width */
+        width: 250px; /* Adjust width as needed */
+    }
   }
