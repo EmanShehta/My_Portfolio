@@ -268,58 +268,41 @@ a {
     -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
     -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
     scrollbar-width: none; /* Hide scrollbar in Firefox */
-    position: initial;
-    justify-content: center; /* Center the cards */
-    gap: 10px; /* Add space between cards */
+    position: relative;
+    padding-left: calc(100vw - 85vw); /* Adjusts padding based on screen size */
   }
   
-  .cards .card {
-    flex: 0 0 80%; /* Adjust width as needed */
-    margin-right: 20px; /* Space between cards */
-  }
-  
-  .cards .card:first-child {
-    margin-left: 5vw; /* Space from the left edge */
-  }
-  
+  /* Hide scrollbar for horizontal scrolling */
   .cards::-webkit-scrollbar {
     display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
   }
   
   .card {
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    padding: 20px; /* Adjust padding as needed */
-    background-color: #fff; /* Background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Box shadow */
+    width: 100%; /* Adjust width as needed */
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0;
+    padding: auto;
   }
   
-  /* Media queries for different screen sizes */
+  /* Padding for large screens */
   @media (min-width: 1200px) {
     .cards {
-      padding-left: 2vw;
-    }
-    .cards .card:first-child {
-      margin-left: 2vw;
+      padding-left: 5%;
     }
   }
   
+  /* Padding for medium screens */
   @media (min-width: 768px) and (max-width: 1199px) {
     .cards {
-      padding-left: 3vw;
-    }
-    .cards .card:first-child {
-      margin-left: 3vw;
+      padding-left: 10%;
     }
   }
   
+  /* Padding for small screens */
   @media (max-width: 767px) {
     .cards {
-      padding-left: 5vw;
-    }
-    .cards .card:first-child {
-      margin-left: 5vw;
+      padding-left: 15%;
     }
   }
   /* Media query for mobile screens */

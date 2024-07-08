@@ -166,7 +166,7 @@
       position: relative;
       transition: all 0.4s ease;
       margin: 0 10px;
-      min-height: 500px; /* Minimum height for the card */
+      min-height: 600px; /* Minimum height for the card */
 
       &:before {
         height: 190px;
