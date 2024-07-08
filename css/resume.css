@@ -281,7 +281,7 @@ a {
   .card {
     width: 250px; /* Adjust width as needed */
 
-      margin: 0px 0px 0px 15px; /* Top, Right, Bottom, Left */
+      padding-left: 25px;
 
   }
   
