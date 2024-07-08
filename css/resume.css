@@ -319,16 +319,20 @@ a {
           -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
           scrollbar-width: none; /* Hide scrollbar in Firefox */
           position: initial;
-      padding-left: 13%;
-      }
-  
-      /* Hide scrollbar for horizontal scrolling */
-      .cards::-webkit-scrollbar {
+          padding-left: calc(100vw - 85vw); /* Adjusts padding based on screen size */
+        }
+        
+        /* Hide scrollbar for horizontal scrolling */
+        .cards::-webkit-scrollbar {
           display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
-      }
-  
-      .card {
-        flex: 0 0 auto; /* Allow cards to shrink and grow, but don't allow them to shrink below their intrinsic width */
-        width: 250px; /* Adjust width as needed */
-    }
+        }
+        
+        .card {
+          width: 100%; /* Adjust width as needed */
+          margin-left: auto;
+          margin-right: auto;
+          flex-shrink: 0;
+          padding: auto;
+        }
+        
   }
