@@ -259,6 +259,7 @@ a {
     .projects-container {
       overflow: auto;
       margin: 15px 0; /* Top and Bottom margin */
+      
   }
   
   .cards {
@@ -274,10 +275,12 @@ a {
       display: none;
   }
   
+
+  p
   .card {
       flex: 0 0 auto; /* Allow cards to shrink and grow, but don't allow them to shrink below their intrinsic width */
       width: 250px; /* Adjust width as needed */
-      margin-right: 15px; /* Space between cards */
+      margin-left: 100px; /* Space between cards */
   }
   
   /* Media query for mobile screens */
@@ -297,5 +300,7 @@ a {
   
       .card {
           width: 100%; /* Adjust width as needed */
+          margin-left: 100px; /* Space between cards */
+
       }
   }
