@@ -266,6 +266,7 @@ a {
       -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
       scrollbar-width: none; /* Hide scrollbar in Firefox */
       padding-left: 15%;
+      padding-right: 15%;
   }
   
   /* Hide scrollbar for WebKit (Chrome, Safari) */
@@ -287,7 +288,8 @@ a {
         -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
         -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
         scrollbar-width: none; /* Hide scrollbar in Firefox */
-        padding-left: 0; /* Adjust padding as needed */
+        padding-left: 15%;
+      padding-right: 15%;
     }
 
     /* Hide scrollbar for horizontal scrolling */
