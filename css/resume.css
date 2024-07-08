@@ -279,7 +279,7 @@ a {
   .card {
       flex: 0 0 auto; /* Allow cards to shrink and grow, but don't allow them to shrink below their intrinsic width */
       width: 250px; /* Adjust width as needed */
-      margin-left: 20%;
+      padding-left: 20%;
   }
   
   /* Media query for mobile screens */
