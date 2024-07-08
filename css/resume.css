@@ -253,10 +253,12 @@ a {
       }
     }
     
-    
+    @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700&display=swap");
+
     .projects-container {
       overflow: auto;
-    
+      margin: 50px -15px; /* Adjust as needed */
   }
   
   .cards {
@@ -266,7 +268,6 @@ a {
       -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
       scrollbar-width: none; /* Hide scrollbar in Firefox */
       padding-left: 15%;
-      padding-right: 15%; /* Changed from negative to positive value */
   }
   
   /* Hide scrollbar for WebKit (Chrome, Safari) */
@@ -275,32 +276,33 @@ a {
   }
   
   .card {
-      flex: 0 0 auto; /* Ensure the card is not stretched */
       width: 100%; /* Adjust width as needed */
-      margin-left: 30%; /* Adjust as needed */
+                margin-left: 30%;
+
   }
   
   /* Media query for mobile screens */
   @media (max-width: 767px) {
-      .cards {
-          display: flex;
-          overflow-x: auto; /* Enable horizontal scrolling */
-          -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
-          -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
-          scrollbar-width: none; /* Hide scrollbar in Firefox */
-          padding-left: 15%;
-          padding-right: 15%; /* Changed from negative to positive value */
-      }
+    .cards {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+        -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbar in IE/Edge */
+        scrollbar-width: none; /* Hide scrollbar in Firefox */
+        padding-left: 0; /* Adjust padding as needed */
+    }
+
+    /* Hide scrollbar for horizontal scrolling */
+    .cards::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
+    }
+
+    .card {
+        width: 100%; /* Adjust width as needed */
+        margin-left: 0; /* Adjust margin as needed */
+        padding: auto; /* Adjust padding as needed */
+    }
+}
+
   
-      /* Hide scrollbar for horizontal scrolling */
-      .cards::-webkit-scrollbar {
-          display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
-      }
-  
-      .card {
-          width: 100%; /* Adjust width as needed */
-          margin-left: 0; /* Adjust margin as needed */
-          padding: auto; /* Adjust padding as needed */
-      }
-  }
   
