@@ -279,7 +279,8 @@ a {
   }
   
   .card {
-      width: 100%; /* Adjust width as needed */
+    width: 250px; /* Adjust width as needed */
+
       margin: 0px 0px 0px 15px; /* Top, Right, Bottom, Left */
 
   }
