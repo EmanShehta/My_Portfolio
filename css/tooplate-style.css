@@ -289,6 +289,14 @@ b, strong {
   color: #ffffff;
 }
 
+@media (max-width: 576px) {
+  .color-mode {
+      padding: 5px;
+      font-size: 14px;
+  }
+}
+
+
 .dark-mode {
   background: #0c0c0d;
 }
