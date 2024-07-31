@@ -18,12 +18,17 @@ body {
 }
 
 .small-text {
-  color: #5b5b5b;
+  color: #c8baba;
   font-size: 14px;
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 50px;
   letter-spacing: 0.2px;
+}
+.dark-mode .small-text
+{
+  color: #eee0e0;
+
 }
 
 ul {
@@ -51,9 +56,12 @@ p {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
-  color: #5b5b5b;
+  color: #000;
 }
+.dark-mode p {
 
+  color: #ffffff;
+}
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   letter-spacing: -1px;
@@ -301,7 +309,9 @@ b, strong {
   background: #0c0c0d;
 }
 .dark-mode .navbar-light .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.8);
+  background-color: #000;
+  color: #fff;
+
 }
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
   color: #FF7D39;
@@ -311,7 +321,7 @@ b, strong {
   border-bottom: 1px solid #1f1f1f;
 }
 .dark-mode .small-text {
-  background: #0d0c15;
+  background: #000000;
   color: #ffffff;
 }
 .dark-mode .feature-card .uil,
@@ -622,7 +632,21 @@ b, strong {
     transform: skew(30deg) translateX(120%);
   }
 }
+@media (max-width: 576px) {
+  .hire {
+    padding: 0.5em 1em; /* Adjust padding for smaller screens */
+    font-size: 0.9em; /* Adjust font size for smaller screens */
+  }
 
+  .btn {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    font-size: 0.9em; /* Adjust font size for smaller screens */
+  }
+
+  .button-container {
+    gap: 15px; /* Adjust gap between buttons for smaller screens */
+  }
+}
 .btn {
   display: inline-block;
   color: #023B6D; /* Using $grey variable */
