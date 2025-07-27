@@ -266,8 +266,8 @@ body.dark-mode .color-mode {
 
 @media (max-width: 768px) {
   .resume-item {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column !important;
+    align-items: flex-start !important;
   }
 
   .company-logo {
@@ -280,4 +280,83 @@ body.dark-mode .color-mode {
     margin-top: 10px;
     margin-left: 0;
   }
+}
+.book-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 300px;
+  background-color: #fff;
+  color: #212529;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.book-card .btn-outline-primary {
+  color: #333;
+  border-color: #555;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.book-card .btn-outline-primary:hover {
+  background-color: #555;
+  color: #fff;
+  border-color: #555;
+  transform: scale(1.05);
+}
+
+/* DARK mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .mode-btn {
+  border-color: #f1f1f1;
+  color: #f1f1f1;
+}
+
+.dark-mode .book-card,
+.dark-mode .card-body {
+  background-color: #1e1e1e !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .card-title,
+.dark-mode .card-text {
+  color: #fff !important;
+}
+
+.dark-mode .btn-outline-primary {
+  border-color: #f1f1f1 !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .btn-outline-primary:hover {
+  background-color: #f1f1f1 !important;
+  color: #121212 !important;
+}
+.card-title-adaptive {
+  color: #000; /* الافتراضي للـ Light */
+}
+
+body.dark-mode .card-title-adaptive {
+  color: #fff; /* لما يكون دارك */
 }
