@@ -185,7 +185,21 @@ body.dark-mode .color-mode {
   transform: rotate(180deg);
 }
 
+.resume-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
 
+.resume-item:hover {
+  transform: scale(1.01);
+}
 .experience-section {
   padding: 20px;
   font-family: 'Segoe UI', sans-serif;
@@ -249,24 +263,16 @@ body.dark-mode .color-mode {
   font-size: 14px;
   margin-left: 20px;
 }
+
 @media (max-width: 768px) {
   .resume-item {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    margin-bottom: 2rem;
   }
 
   .company-logo {
-    width: 60px;
-    height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-right: 0;
-  }
-
-  .resume-content {
-    text-align: center;
   }
 
   .resume-date {
