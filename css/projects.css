@@ -341,7 +341,7 @@ body.dark-mode {
 
 .dark-mode .card-title,
 .dark-mode .card-text {
-  color: #f1f1f1 !important;
+  color: #fff !important;
 }
 
 .dark-mode .btn-outline-primary {
@@ -352,4 +352,11 @@ body.dark-mode {
 .dark-mode .btn-outline-primary:hover {
   background-color: #f1f1f1 !important;
   color: #121212 !important;
+}
+.card-title-adaptive {
+  color: #000; /* الافتراضي للـ Light */
+}
+
+body.dark-mode .card-title-adaptive {
+  color: #fff; /* لما يكون دارك */
 }
