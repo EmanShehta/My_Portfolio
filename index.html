@@ -8,6 +8,10 @@
 
     <title>Eman Shehta Portfolio</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/project/MyPhoto.jpeg">
+    <link rel="apple-touch-icon" href="images/project/MyPhoto.jpeg">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/unicons.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -31,10 +35,12 @@
     <link rel="stylesheet" href="css/tooplate-style.css">
     <link rel="stylesheet" href="css/projects.css">
 
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  
+    <!-- Custom Impressive Styles -->
+    <link rel="stylesheet" href="css/impressive.css">
 
-    
 <!--
 
 Tooplate 2115 Marvel
@@ -47,7 +53,9 @@ https://www.tooplate.com/view/2115-marvel
 <!-- MENU -->
 <nav class="navbar navbar-expand-sm navbar-light">
   <div class="container">
-      <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Eman Shehta</a>
+      <a class="navbar-brand" href="index.html">
+          <img src="images/project/MyPhoto.jpeg" alt="Eman" class="navbar-photo"> Eman Shehta
+      </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -68,7 +76,10 @@ https://www.tooplate.com/view/2115-marvel
                   <a href="#projects" class="nav-link"><span data-hover="Projects">Projects</span></a>
               </li>
               <li class="nav-item">
-                  <a href="#lookup" class="nav-link"><span data-hover="Lookup">Look Over</span></a>
+                  <a href="#demo-projects" class="nav-link"><span data-hover="Demo">Demos</span></a>
+              </li>
+              <li class="nav-item">
+                  <a href="#lookup" class="nav-link"><span data-hover="Lookup">LookOver</span></a>
               </li>
               <li class="nav-item">
                   <a href="#education" class="nav-link"><span data-hover="Education">Education</span></a>
@@ -100,7 +111,13 @@ https://www.tooplate.com/view/2115-marvel
 
     <!-- ABOUT -->
     <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
-        <div class="container">
+        <div id="particles-js"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
                 
                 <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
@@ -109,11 +126,15 @@ https://www.tooplate.com/view/2115-marvel
                             <span class="mr-2"> I'm</span>
                                 <div class="animated-info">
                                     <span class="animated-item">Eman Shehta</span>
-                                    <span class="animated-item" style="white-space: nowrap;">Full Stack Developer</span>
+                                    <span class="animated-item" style="white-space: nowrap;">Software Developer</span>
+                                    <span class="animated-item" style="white-space: nowrap;">.NET | Angular</span>
                                   </div>
                         </h1>
-                        <p class="mb-5">
-                          Commencing with steadfast dedication to Back-End development, my aspiration is to achieve mastery through continuous growth. The prospect of keeping up with the latest technologies, such as ASP.NET Core, to create efficient and robust applications excites me. Working in dynamic teams, I eagerly anticipate contributing to important projects and delivering impactful solutions. Driven by a passion for algorithms and data structures, my dedication to improving skills in these areas is paramount. My journey in mastering ASP.NET Core is fueled by the desire to harness its powerful features for developing scalable and high-performance web applications.
+                        <p class="location-info mb-2">
+                          <i class="fas fa-map-marker-alt"></i> Cairo, Egypt
+                        </p>
+                        <p class="mb-4">
+                          Full Stack Developer with expertise in .NET and Angular, passionate about building scalable and high-performance web applications. Experienced in Clean Architecture, CQRS, and modern development practices. Strong problem-solver with 2000+ algorithmic problems solved across competitive programming platforms. Dedicated to continuous learning and delivering impactful solutions in dynamic team environments.
                         </p>
                     
                         <div class="button-container">
@@ -183,47 +204,88 @@ https://www.tooplate.com/view/2115-marvel
             </div>
         </div>
     </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stat-card">
+              <i class="fas fa-code stat-icon"></i>
+              <h2 class="counter" data-target="2000">0</h2>
+              <p>Problems Solved</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stat-card">
+              <i class="fas fa-project-diagram stat-icon"></i>
+              <h2 class="counter" data-target="15">0</h2>
+              <p>Projects Completed</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="stat-card">
+              <i class="fas fa-briefcase stat-icon"></i>
+              <h2 class="counter" data-target="2">0</h2>
+              <p>Years Experience</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="stat-card">
+              <i class="fas fa-trophy stat-icon"></i>
+              <h2 class="counter" data-target="10">0</h2>
+              <p>Certifications</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="experience full-screen d-lg-flex justify-content-center align-items-center" id="experience">
       <div class="container">
           <div class="row">
             <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
               <div class="about-text">
             <div class="my-auto">
-              <h2 class="mb-5">Experience</h2>
+              <h2 class="mb-5 section-title" data-aos="fade-right" data-aos-duration="800">Experience</h2>
               <div class="my-auto">
               
                 
-                  <div class="resume-item">
+                  <div class="resume-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <img src="images/project/goodsmart.jpg" alt="GoodsMart Logo" class="company-logo">
                     <div class="resume-content">
                       <h3>GoodsMart</h3>
-                      <div class="subheading">FullStack Developer</div>
+                      <div class="subheading">Full Stack Developer (.NET | Angular)</div>
                       <p>
-                        • Worked on the Product and Support service, handling all existing features while introducing and managing new ones.<br>
-                        • Revamped and improved legacy features to enhance functionality and user experience.<br>
-                        • Optimized database queries for better performance, ensuring faster and more efficient operations.<br>
-                        • Focused on code and query quality, adhering to best practices for maintainable and high-performance development.
+                        • Maintained and enhanced existing features ensuring system stability and seamless functionality.<br>
+                        • Implemented new features aligned with evolving business needs to boost user engagement.<br>
+                        • Optimized complex database queries to increase system responsiveness and efficiency.<br>
+                        • Built proactive monitoring using Hangfire daily health checks, reducing errors.<br>
+                        • Implemented Redis atomic locks to prevent duplicate transactions.<br>
+                        • Integrated Serilog logging with AWS CloudWatch for error visibility.<br>
+                        • Implemented VRP optimization module to minimize delivery time and costs.<br>
+                        • Refactored legacy code within Purchase Order System improving scalability.
                       </p>
                     </div>
                     <div class="resume-date">Aug 2024 - Present</div>
                   </div>
-                
-                  <div class="resume-item">
+
+                  <div class="resume-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <img src="images/project/allfoods.webp" alt="All Foods Tech Logo" class="company-logo">
                     <div class="resume-content">
-                      <h3>All Foods Tech (Management Information System)</h3>
-                      <div class="subheading">Software Developer</div>
+                      <h3>All Foods Tech (MIS)</h3>
+                      <div class="subheading">Software Developer (.NET | Blazor)</div>
                       <p>
-                        • Developed and upheld backend systems using ASP.NET Core and MVC API.<br>
-                        • Managed and optimized databases, leveraging Entity Framework.<br>
-                        • Resolved issues within the backend code using ASP.NET Core's debugging tools.<br>
-                        • Used Git for version control to enable team collaboration.
+                        • Worked on projects centered around customer preferences and top-selling items.<br>
+                        • Designed Customer Complaints Management System for tracking and resolution.<br>
+                        • Built Task Management System to organize staff assignments across departments.<br>
+                        • Collaborated with cross-functional teams ensuring systems aligned with business goals.
                       </p>
                     </div>
-                    <div class="resume-date">July 2023 - Aug 2024</div>
+                    <div class="resume-date">Oct 2023 - Aug 2024</div>
                   </div>
-                
-                  <div class="resume-item">
+
+                  <div class="resume-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <img src="images/project/orange.png" alt="Orange Digital Center Logo" class="company-logo">
                     <div class="resume-content">
                       <h3>Orange Digital Center</h3>
@@ -232,7 +294,7 @@ https://www.tooplate.com/view/2115-marvel
                         • Led backend API development using ASP.NET Core and Entity Framework.<br>
                         • Designed customizable REST APIs.<br>
                         • Created ERDs and designed efficient databases.<br>
-                        • Used Entity Framework Core and Dapper ORM for MySQL and MSSQL databases.
+                        • Used Entity Framework Core and Dapper ORM for MySQL and MSSQL.
                       </p>
                     </div>
                     <div class="resume-date">Aug 2022 – Nov 2022</div>
@@ -249,161 +311,326 @@ https://www.tooplate.com/view/2115-marvel
           </div>
       </div>
   </section>
-    <!-- PROJECTS -->
-    <section class="project py-5" id="projects">
+    <!-- PROJECT GALLERY -->
+    <section class="project-gallery-section py-5" id="projects">
       <div class="container">
         <div class="row">
-          <div class="col-lg-11 text-center mx-auto col-12">
+          <div class="col-12 text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title gradient-text">Project Gallery</h2>
+            <p class="sec-icon"><i class="fa-solid fa-images"></i></p>
+            <p class="text-muted">Screenshots from my ASP.NET applications</p>
+          </div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filter text-center mb-4" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="shopay">Shopay</button>
+          <button class="filter-btn" data-filter="academy">Smart Academy</button>
+          <button class="filter-btn" data-filter="taskboard">TaskBoard</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- Shopay Screenshots -->
+          <div class="gallery-item" data-category="shopay" data-aos="zoom-in" data-aos-delay="100">
+            <img src="images/project/shop0.jpg" alt="Shopay Dashboard">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Shopay</span>
+              <p>Admin Dashboard</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="shopay" data-aos="zoom-in" data-aos-delay="150">
+            <img src="images/project/shop1.jpg" alt="Shopay Products">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Shopay</span>
+              <p>Product Catalog</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="shopay" data-aos="zoom-in" data-aos-delay="200">
+            <img src="images/project/shop2.jpg" alt="Shopay Cart">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Shopay</span>
+              <p>Shopping Cart</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="shopay" data-aos="zoom-in" data-aos-delay="250">
+            <img src="images/project/shop3.jpg" alt="Shopay Checkout">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Shopay</span>
+              <p>Checkout Flow</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="shopay" data-aos="zoom-in" data-aos-delay="300">
+            <img src="images/project/shop4.jpg" alt="Shopay Payment">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Shopay</span>
+              <p>Stripe Payment</p>
+            </div>
+          </div>
+
+          <!-- Smart Academy Screenshots -->
+          <div class="gallery-item" data-category="academy" data-aos="zoom-in" data-aos-delay="100">
+            <img src="images/project/school1.jpg" alt="Smart Academy">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Smart Academy</span>
+              <p>Dashboard</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="academy" data-aos="zoom-in" data-aos-delay="150">
+            <img src="images/project/school2.jpg" alt="Smart Academy">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Smart Academy</span>
+              <p>Student Management</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="academy" data-aos="zoom-in" data-aos-delay="200">
+            <img src="images/project/school3.jpg" alt="Smart Academy">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Smart Academy</span>
+              <p>Course Overview</p>
+            </div>
+          </div>
+
+          <!-- TaskBoard Screenshots -->
+          <div class="gallery-item" data-category="taskboard" data-aos="zoom-in" data-aos-delay="100">
+            <img src="images/project/task.jpg" alt="TaskBoard">
+            <div class="gallery-overlay">
+              <span class="gallery-label">TaskBoard</span>
+              <p>Kanban Board</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="taskboard" data-aos="zoom-in" data-aos-delay="150">
+            <img src="images/project/vac.png" alt="TaskBoard">
+            <div class="gallery-overlay">
+              <span class="gallery-label">TaskBoard</span>
+              <p>Task Overview</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="taskboard" data-aos="zoom-in" data-aos-delay="200">
+            <img src="images/project/vac2.png" alt="TaskBoard">
+            <div class="gallery-overlay">
+              <span class="gallery-label">TaskBoard</span>
+              <p>Team View</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO PROJECTS -->
+    <section class="demo-projects py-5" id="demo-projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 text-center mx-auto col-12" data-aos="fade-up">
             <div class="section-header text-center">
-              <h2 class="fw-bold fs-1">
-                My
-                <span class="b-class-secondary">ASP.NET </span>Projects
+              <h2 class="fw-bold fs-1 gradient-text">
+                Demo
+                <span class="b-class-secondary">Projects</span>
               </h2>
-              <p class="sec-icon"><i class="fa-solid fa-gear"></i></p>
+              <p class="sec-icon"><i class="fa-solid fa-play fa-beat"></i></p>
+              <p class="text-muted mt-3">Watch my projects in action</p>
             </div>
           </div>
         </div>
         <br>
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <div class="project-info">
-              <img src="images/project/shop0.jpg" class="img-fluid" alt="project image">
+        <div class="row justify-content-center g-4">
+          <!-- My Shop Video -->
+          <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-duration="800">
+            <div class="demo-video-card">
+              <div class="video-header">
+                <span class="project-badge">E-Commerce</span>
+                <h4>Shopay - Online Store</h4>
+                <p class="video-description">Full-featured shopping platform with Stripe payments, user authentication, and admin dashboard</p>
+              </div>
+              <div class="video-container">
+                <video class="demo-video" controls poster="images/project/shop0.jpg">
+                  <source src="images/project/MyShopVideo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="video-tech-stack">
+                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">Entity Framework</span>
+                <span class="tech-tag">Stripe</span>
+                <span class="tech-tag">Azure</span>
+              </div>
             </div>
           </div>
-          <div class="item">
-            <div class="project-info">
-              <img src="images/project/shop1.jpg" class="img-fluid" alt="project image">
-            </div>
-          </div>
-          <div class="item">
-            <div class="project-info">
-              <img src="images/project/shop2.jpg" class="img-fluid" alt="project image">
-            </div>
-          </div>
-          <div class="item">
-            <div class="project-info">
-              <img src="images/project/shop3.jpg" class="img-fluid" alt="project image">
-            </div>
-          </div>
-          <div class="item">
-            <div class="project-info">
-              <img src="images/project/shop4.jpg" class="img-fluid" alt="project image">
-            </div>
-          </div>
-          <div class="item">
-            <div class="project-info">
-              <img src="images/project/school1.jpg" class="img-fluid" alt="project image">
-            </div>
-          </div>
-          <div class="item">
-            <div class="project-info">
-              <img src="images/project/school2.jpg" class="img-fluid" alt="project image">
-            </div>
-          </div>
-          <div class="item">
-            <div class="project-info">
-              <img src="images/project/school3.jpg" class="img-fluid" alt="project image">
-            </div>
-          </div>
-          <div class="item">
-            <div class="project-info">
-              <img src="images/project/vac.png" class="img-fluid" alt="project image">
-            </div>
-          </div>
-          <div class="item">
-            <div class="project-info">
-              <img src="images/project/vac2.png" class="img-fluid" alt="project image">
-            </div>
-          </div>
-          <div class="item">
-            <div class="project-info">
-              <img src="images/project/task.jpg" class="img-fluid" alt="project image" style="padding-top:15%;">
+          <!-- Kanban Board Video -->
+          <div class="col-lg-6 col-md-12" data-aos="fade-left" data-aos-duration="800">
+            <div class="demo-video-card">
+              <div class="video-header">
+                <span class="project-badge">Task Management</span>
+                <h4>Kanban Board</h4>
+                <p class="video-description">Drag-and-drop task management with real-time updates, team collaboration features</p>
+              </div>
+              <div class="video-container">
+                <video class="demo-video" controls>
+                  <source src="images/project/Kanbanboard.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="video-tech-stack">
+                <span class="tech-tag">DDD</span>
+                <span class="tech-tag">CQRS</span>
+                <span class="tech-tag">SignalR</span>
+                <span class="tech-tag">Redis</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section> 
-<!-- LOOKUP -->
-<section id="lookup" class="advertisers-service-sec pt-5 pb-5">
+    </section>
+
+<!-- FEATURED PROJECTS -->
+<section id="lookup" class="featured-projects-section py-5">
   <div class="container">
-    <div class="row mt-5 mt-md-4 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center">
-      <div class="col">
-        <a href="https://github.com/EmanShehta/CustomerComplaintsSystem" class="service-card-link">
-          <div class="service-card">
-            <div class="icon-wrapper">
-              <img src="images/project/shop.png" alt="1" class="icon-image">
-            </div>
-            <h3>Complain Gate</h3>
-            <p>
-              A robust ASP.NET Core solution with Identity, C#, and EF code-first, designed for call center management and customer complaints resolution. Includes Fast Report for report generation, and features like <strong>SignalR, Reports, AdminBoard, Emails, Others</strong>.
-            </p>
-          </div>
-        </a>
+    <div class="row">
+      <div class="col-12 text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title gradient-text">Featured Projects</h2>
+        <p class="sec-icon"><i class="fa-solid fa-code"></i></p>
+        <p class="text-muted">Explore my latest work and technical implementations</p>
       </div>
-      <div class="col">
-        <a href="https://github.com/EmanShehta/MyShop" class="service-card-link">
-          <div class="service-card">
-            <div class="icon-wrapper">
-              <img src="images/project/shop.jpg" alt="1" class="icon-image">
-            </div>
-            <h3>Shopay</h3>
-            <p>
-              Using Entity Framework and Microsoft ASP.NET Identity, the project entails developing a shopping cart application with Special <strong> NTier Architecture, Repository Pattern & Unit of Work, Identity & permissions management, Datatables & Toaster JS, Dashboard, Pagination, Sessions, Online payment Stripe, Publishing the project on Microsoft Azure Cloud</strong>.
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="col">
-        <a href="https://github.com/EmanShehta/TaskManagment" class="service-card-link">
-        <div class="service-card">
-          <div class="icon-wrapper">
-            <img src="images/project/taskPH.jpg" alt="1" class="icon-image">
-          </div>
-          <h3> TaskBoard Suite</h3>
-          <p>
-            Task management system utilizing DDD, CQRS, Event Sourcing, and Testing Concepts for efficient task allocation, organization, and employee empowerment, aimed at optimizing productivity while facilitating with implementations such as <strong> Multitenancy, 
-              CQRS, Caching, 
-              Notifications, Paginations,
-              Specification,
-              Onion Architecture</strong></p>
-        </div>
-        </a>
-      </div>
-      <div class="col">
-        <a href="https://github.com/EmanShehta/SchoolManagmentApiCleanArchitecture" class="service-card-link">
+    </div>
 
-        <div class="service-card">
-          <div class="icon-wrapper">
-            <img src="images/project/schoolicon.jpg" alt="1" class="icon-image">
+    <div class="row g-4">
+      <!-- ComplainGate -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/project/com.jpg" alt="ComplainGate">
+            <div class="project-overlay">
+              <a href="https://github.com/EmanShehta/CustomerComplaintsSystem" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
           </div>
-          <h3>Smart Academy</h3>
-          <p>
-            Developed the project with Clean Architecture, using CQRS, Mediator patterns, and Fluent Validation. 
-            <strong>
-              Implemented Localization and employed Serilog for error logging.
-              Optimized database operations with Views and Stored Procedures.
-              Implemented JWT and Refresh Tokens, and role-based identity with claims & Email confirmation to enhance security.
-            </strong> </p>
+          <div class="project-content">
+            <span class="project-category">Call Center Management</span>
+            <h3 class="project-title">ComplainGate</h3>
+            <p class="project-description">ASP.NET Core solution for call center operations with officer routing and complaint management.</p>
+            <div class="project-tech">
+              <span>SignalR</span>
+              <span>Fast Report</span>
+              <span>Identity</span>
+              <span>EF Core</span>
+            </div>
+          </div>
         </div>
-        </a>
       </div>
-      <div class="col">
-        <a href="https://github.com/EmanShehta/GameZone" class="service-card-link">
 
-        <div class="service-card">
-          <div class="icon-wrapper">
-            <img src="images/project/gameicon.jpg" alt="1" class="icon-image">
+      <!-- Shopay -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card featured">
+          <div class="project-image">
+            <img src="images/project/shop0.jpg" alt="Shopay">
+            <div class="project-overlay">
+              <a href="https://github.com/EmanShehta/MyShop" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
           </div>
-          <h3>Game Zone</h3>
-          <p>
-            Implemented efficient CRUD operations like adding, deleting, and updating data using .NET 8 (MVC), 
-            ensuring seamless data management and interaction within the application, <strong>
-              Repositry Pattern & Unit Of Work
-            </strong>.  </p>
+          <div class="project-content">
+            <span class="project-category">E-Commerce</span>
+            <h3 class="project-title">Shopay</h3>
+            <p class="project-description">Full-featured shopping cart with Stripe payments, admin dashboard, deployed on Azure Cloud.</p>
+            <div class="project-tech">
+              <span>N-Tier</span>
+              <span>Stripe</span>
+              <span>Azure</span>
+              <span>Identity</span>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- TaskBoard Suite -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/project/task.jpg" alt="TaskBoard Suite">
+            <div class="project-overlay">
+              <a href="https://github.com/EmanShehta/TaskManagment" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Task Management</span>
+            <h3 class="project-title">TaskBoard Suite</h3>
+            <p class="project-description">Task management system using DDD, CQRS, and Event Sourcing for team productivity.</p>
+            <div class="project-tech">
+              <span>DDD</span>
+              <span>CQRS</span>
+              <span>Multitenancy</span>
+              <span>Onion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smart Academy -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/project/school1.jpg" alt="Smart Academy">
+            <div class="project-overlay">
+              <a href="https://github.com/EmanShehta/SchoolManagmentApiCleanArchitecture" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Education System</span>
+            <h3 class="project-title">Smart Academy</h3>
+            <p class="project-description">School management API with Clean Architecture, JWT authentication, and multilingual support.</p>
+            <div class="project-tech">
+              <span>Clean Arch</span>
+              <span>JWT</span>
+              <span>Serilog</span>
+              <span>Mediator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Zone -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/project/game.jpg" alt="Game Zone">
+            <div class="project-overlay">
+              <a href="https://github.com/EmanShehta/GameZone" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Gaming Platform</span>
+            <h3 class="project-title">Game Zone</h3>
+            <p class="project-description">Gaming platform built with .NET 8 MVC featuring efficient CRUD operations and modern UI.</p>
+            <div class="project-tech">
+              <span>.NET 8</span>
+              <span>MVC</span>
+              <span>Repository</span>
+              <span>Unit of Work</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- View All Projects -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <a href="https://github.com/EmanShehta?tab=repositories" target="_blank" class="view-all-card">
+          <div class="view-all-content">
+            <i class="fab fa-github"></i>
+            <h3>View All Projects</h3>
+            <p>Explore more on GitHub</p>
+            <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+          </div>
         </a>
       </div>
-     
     </div>
   </div>
 </section>
@@ -479,51 +706,63 @@ https://www.tooplate.com/view/2115-marvel
           <li class="list-inline-item"><i class="devicons devicons-msql_server"></i></li>
         </ul>
 
-        <!-- Back-End Skills -->
-        <div class="subheading mb-2">🔧 <strong>Back-End Development</strong></div>
+        <!-- Back-End Development -->
+        <div class="subheading mb-2">🔧 <strong>Backend Development</strong></div>
         <ul class="fa-ul mb-4">
-          <li><i class="fa-li fa fa-check"></i> SQL, C#, LINQ</li>
-          <li><i class="fa-li fa fa-check"></i> ASP.NET Core (MVC & Web API)</li>
-          <li><i class="fa-li fa fa-check"></i> Entity Framework Core, Fluent API</li>
-          <li><i class="fa-li fa fa-check"></i> 3-Tier & Onion Architecture</li>
-          <li><i class="fa-li fa fa-check"></i> Dependency Injection, AutoMapper</li>
+          <li><i class="fa-li fa fa-check"></i> C#, ASP.NET Core (MVC & Web API)</li>
+          <li><i class="fa-li fa fa-check"></i> Entity Framework Core, LINQ, SQL</li>
+          <li><i class="fa-li fa fa-check"></i> Identity, JWT Authentication, Refresh Tokens</li>
+          <li><i class="fa-li fa fa-check"></i> AutoMapper, Fluent Validation, Specification Pattern</li>
+          <li><i class="fa-li fa fa-check"></i> Dependency Injection, Hangfire</li>
           <li><i class="fa-li fa fa-check"></i> Caching (In-Memory & Redis)</li>
-          <li><i class="fa-li fa fa-check"></i> Logging (Serilog, Sentry)</li>
-          <li><i class="fa-li fa fa-check"></i> Identity, JWT & Refresh Tokens</li>
-          <li><i class="fa-li fa fa-check"></i> Background Jobs with Hangfire</li>
-          <li><i class="fa-li fa fa-check"></i> FluentValidation, Specification Pattern</li>
         </ul>
 
-        <!-- Technical Knowledge -->
-        <div class="subheading mb-2">💡 <strong>Technical Knowledge</strong></div>
+        <!-- Frontend Development -->
+        <div class="subheading mb-2">🎨 <strong>Frontend Development</strong></div>
         <ul class="fa-ul mb-4">
-          <li><i class="fa-li fa fa-check"></i> Object-Oriented Programming (OOP)</li>
-          <li><i class="fa-li fa fa-check"></i> SOLID Principles</li>
-          <li><i class="fa-li fa fa-check"></i> Software Design Patterns (Factory, Singleton, Repository...)</li>
-          <li><i class="fa-li fa fa-check"></i> Version Control with Git & GitHub</li>
-          <li><i class="fa-li fa fa-check"></i> Agile & Scrum Methodologies</li>
-          <li><i class="fa-li fa fa-check"></i> Data Structures & Algorithms</li>
-          <li><i class="fa-li fa fa-check"></i> Containers & Docker (Basics)</li>
+          <li><i class="fa-li fa fa-check"></i> Angular, Blazor</li>
+          <li><i class="fa-li fa fa-check"></i> jQuery, AJAX, Bootstrap</li>
+          <li><i class="fa-li fa fa-check"></i> HTML5, CSS3, JavaScript</li>
+        </ul>
+
+        <!-- Architecture & Design -->
+        <div class="subheading mb-2">🏗️ <strong>Architecture & Design</strong></div>
+        <ul class="fa-ul mb-4">
+          <li><i class="fa-li fa fa-check"></i> Clean Architecture, Onion Architecture, 3-Tier</li>
+          <li><i class="fa-li fa fa-check"></i> SOLID Principles, Fluent API</li>
+          <li><i class="fa-li fa fa-check"></i> Design Patterns (Repository, Factory, Singleton)</li>
+          <li><i class="fa-li fa fa-check"></i> OOP & OOA with UML</li>
+        </ul>
+
+        <!-- DevOps & Tools -->
+        <div class="subheading mb-2">⚙️ <strong>DevOps & Tools</strong></div>
+        <ul class="fa-ul mb-4">
+          <li><i class="fa-li fa fa-check"></i> Docker, AWS (CloudWatch)</li>
+          <li><i class="fa-li fa fa-check"></i> CI/CD Pipeline Deployment</li>
+          <li><i class="fa-li fa fa-check"></i> Serilog (Logging), Sentry (Monitoring)</li>
+          <li><i class="fa-li fa fa-check"></i> Git & GitHub</li>
         </ul>
 
         <!-- Programming Languages -->
         <div class="subheading mb-2">🧠 <strong>Programming Languages</strong></div>
         <ul class="fa-ul mb-4">
-          <li><i class="fa-li fa fa-code"></i> C, C++, C#</li>
-          <li><i class="fa-li fa fa-code"></i> Java, JavaScript</li>
-          <li><i class="fa-li fa fa-code"></i> Python</li>
+          <li><i class="fa-li fa fa-code"></i> C, C++, C#, Java, JavaScript</li>
+          <li><i class="fa-li fa fa-code"></i> Python, Scala, MATLAB, Prolog</li>
         </ul>
 
-        <!-- Workflow -->
-        <div class="subheading mb-2">📌 <strong>Workflow</strong></div>
+        <!-- Core Concepts -->
+        <div class="subheading mb-2">💡 <strong>Core Concepts</strong></div>
         <ul class="fa-ul mb-4">
-          <li><i class="fa-li fa fa-check"></i> API Development using ASP.NET Core and EF Core</li>
-          <li><i class="fa-li fa fa-check"></i> SQL (MySQL / MSSQL) Design & Optimization</li>
-          <li><i class="fa-li fa fa-check"></i> Secure Auth & Authorization (OAuth, JWT)</li>
-          <li><i class="fa-li fa fa-check"></i> Performance Monitoring & Optimization</li>
-          <li><i class="fa-li fa fa-check"></i> Integration with Third-Party APIs & Services</li>
-          <li><i class="fa-li fa fa-check"></i> Git Version Control & Collaboration</li>
-          <li><i class="fa-li fa fa-check"></i> Task Management within Agile Teams</li>
+          <li><i class="fa-li fa fa-check"></i> Data Structures & Algorithms</li>
+          <li><i class="fa-li fa fa-check"></i> Agile & Scrum Methodologies</li>
+          <li><i class="fa-li fa fa-check"></i> Problem Solving (2000+ problems solved)</li>
+        </ul>
+
+        <!-- Languages -->
+        <div class="subheading mb-2">🌐 <strong>Languages</strong></div>
+        <ul class="fa-ul mb-4">
+          <li><i class="fa-li fa fa-globe"></i> Arabic (Native)</li>
+          <li><i class="fa-li fa fa-globe"></i> English (B2 - Upper Intermediate)</li>
         </ul>
 
         <!-- CV Download -->
@@ -579,6 +818,18 @@ https://www.tooplate.com/view/2115-marvel
         </div>
       </div>
 
+      <!-- Database Internals -->
+      <div class="col-md-4 mb-4" style="animation-delay: 0.9s;">
+        <div class="card book-card shadow-lg h-100 text-light  border-0">
+          <img src="https://covers.openlibrary.org/b/isbn/9781492040347-L.jpg" class="card-img-top" alt="Database Internals" style="height: 350px; object-fit: cover;">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title card-title-adaptive fw-bold">Database Internals</h5>
+            <p class="card-text text-secondary">Deep diving into storage engines, distributed systems, and how databases work under the hood.</p>
+            <a href="https://www.goodreads.com/book/show/44647144-database-internals" target="_blank" class="btn btn-outline-light btn-sm mt-auto">More Info</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -586,57 +837,118 @@ https://www.tooplate.com/view/2115-marvel
 
 
 
-<section class="experience full-screen d-lg-flex justify-content-center align-items-center" id="awards">
+<!-- AWARDS & CERTIFICATIONS -->
+<section class="awards-section py-5" id="awards">
   <div class="container">
-      <div class="row">  
-        <div class="col-lg-6 col-12">
-    <h2 class="mb-5">Awards &amp; Certifications</h2>
-    <ul class="fa-ul mb-0">
-      <li>
-        <a href="https://codeforces.com/profile/eman_shehta">
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        Solved over 2000 problem on Different Sites Like Codeforces , LeetCode , Hacker Rank, VJudge</li>
-      </a>
-        <li>
-        <a href="https://drive.google.com/file/d/1FPw8EvqTDMClIwrAz7kpb-JmqYN75hTJ/view?usp=sharing">
+    <div class="row">
+      <div class="col-12 text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title gradient-text">Awards & Certifications</h2>
+        <p class="sec-icon"><i class="fa-solid fa-medal"></i></p>
+        <p class="text-muted">Recognition of excellence and continuous learning</p>
+      </div>
+    </div>
 
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        Coach academy Level 1, 2 & 3 In Problem Solving, Which covered advanced topics. </li>
-        </a>
-        <li>
-        <a href="https://drive.google.com/drive/u/0/folders/1Kr5WDh_lxbhQU6d2yDYaY4idvSTuxaAw">
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        Passing Hacker Rank Exam in Competitive Programming 2022&2023
-      </a></li>
-      <li>
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        <a href="https://drive.google.com/drive/folders/1OVdQCN4ou51xujpY6iPZH2bWMxpb7PSp?usp=sharing">Passing Hacker Rank Exam in SQL All levels 2022 & 2023</a>
-      </li>
-      <li>
-        <a href="https://drive.google.com/file/d/1_7hy-Ov3doUXHjjUMfVLmy-MsDXgeqtZ/view?usp=sharing">
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        Coach academy Level 3 Certificate 
-      </a></li>
-      <li>
-        <a href="https://drive.google.com/file/d/1mNtoujfCFmQfQd70yYQRFIoJxtczQlZv/view?usp=share_link">
+    <div class="row g-4">
+      <!-- Competitive Programming Achievement -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="award-card featured">
+          <div class="award-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="award-badge">Elite</div>
+          <h3 class="award-title">Problem Solving Master</h3>
+          <p class="award-description">Solved over <strong>2000+ problems</strong> across multiple competitive programming platforms</p>
+          <div class="award-platforms">
+            <a href="https://codeforces.com/profile/eman_shehta" target="_blank" class="platform-link">
+              <img src="images/project/code-forces.png" alt="Codeforces" title="Codeforces">
+            </a>
+            <a href="https://leetcode.com/u/emanshehta2001/" target="_blank" class="platform-link">
+              <img src="images/project/leetcode.png" alt="LeetCode" title="LeetCode">
+            </a>
+          </div>
+          <a href="https://codeforces.com/profile/eman_shehta" target="_blank" class="award-link">View Profile <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
 
-        <i class="fa-li fa fa-trophy text-warning"></i>
-        Place - Participated Girls ACPC 2022 Contest 2 July, Solved 4 Problems
-        </a></li>
-        <li>
-          <a href="https://drive.google.com/file/d/1E2u6MJOgj5AoUBtak1al1rVenwGpn5Jj/view?usp=sharing">
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            109<sup>th</sup> Contestant at ACM ICPC for Egyptian Collegiate Programming Contest 2023
-          </a>
-        </li>
-        
-     
-    </ul>
-</div>
-</div>
-</div>
+      <!-- ICPC Achievement -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="award-card">
+          <div class="award-icon gold">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="award-badge">Competition</div>
+          <h3 class="award-title">ACM ICPC Contestant</h3>
+          <p class="award-description"><strong>109th Place</strong> at Egyptian Collegiate Programming Contest 2023</p>
+          <div class="award-year">2023</div>
+          <a href="https://drive.google.com/file/d/1E2u6MJOgj5AoUBtak1al1rVenwGpn5Jj/view?usp=sharing" target="_blank" class="award-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
 
- 
+      <!-- Girls ACPC -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="award-card">
+          <div class="award-icon purple">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="award-badge">Competition</div>
+          <h3 class="award-title">Girls ACPC 2022</h3>
+          <p class="award-description">Successfully participated and <strong>solved 4 problems</strong> in the contest</p>
+          <div class="award-year">July 2022</div>
+          <a href="https://drive.google.com/file/d/1mNtoujfCFmQfQd70yYQRFIoJxtczQlZv/view?usp=share_link" target="_blank" class="award-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Coach Academy -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="award-card">
+          <div class="award-icon blue">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="award-badge">Training</div>
+          <h3 class="award-title">Coach Academy</h3>
+          <p class="award-description">Completed <strong>Level 1, 2 & 3</strong> in Problem Solving covering advanced algorithms and data structures</p>
+          <div class="award-tags">
+            <span>Algorithms</span>
+            <span>Data Structures</span>
+            <span>Advanced Topics</span>
+          </div>
+          <a href="https://drive.google.com/file/d/1_7hy-Ov3doUXHjjUMfVLmy-MsDXgeqtZ/view?usp=sharing" target="_blank" class="award-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- HackerRank CP -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="award-card">
+          <div class="award-icon green">
+            <i class="fab fa-hackerrank"></i>
+          </div>
+          <div class="award-badge">Certification</div>
+          <h3 class="award-title">HackerRank - Programming</h3>
+          <p class="award-description">Passed Competitive Programming certification exams in <strong>2022 & 2023</strong></p>
+          <div class="award-year">2022 - 2023</div>
+          <a href="https://drive.google.com/drive/u/0/folders/1Kr5WDh_lxbhQU6d2yDYaY4idvSTuxaAw" target="_blank" class="award-link">View Certificates <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- HackerRank SQL -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="award-card">
+          <div class="award-icon orange">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="award-badge">Certification</div>
+          <h3 class="award-title">HackerRank - SQL</h3>
+          <p class="award-description">Passed <strong>all SQL levels</strong> certification exams (Basic to Advanced)</p>
+          <div class="award-tags">
+            <span>Basic</span>
+            <span>Intermediate</span>
+            <span>Advanced</span>
+          </div>
+          <a href="https://drive.google.com/drive/folders/1OVdQCN4ou51xujpY6iPZH2bWMxpb7PSp?usp=sharing" target="_blank" class="award-link">View Certificates <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ADVERTISERS SERVICE CARD ENDED -->
@@ -665,19 +977,148 @@ https://www.tooplate.com/view/2115-marvel
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+      // Initialize AOS
+      AOS.init({
+        once: true,
+        offset: 100,
+        duration: 800
+      });
+
+      // Initialize Particles.js
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: '#ff7d39' },
+          shape: { type: 'circle' },
+          opacity: { value: 0.5, random: true },
+          size: { value: 3, random: true },
+          line_linked: { enable: true, distance: 150, color: '#ff7d39', opacity: 0.4, width: 1 },
+          move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+        },
+        interactivity: {
+          detect_on: 'canvas',
+          events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: true, mode: 'push' }, resize: true },
+          modes: { grab: { distance: 140, line_linked: { opacity: 1 } }, push: { particles_nb: 4 } }
+        },
+        retina_detect: true
+      });
+
+      // Counter Animation
+      const counters = document.querySelectorAll('.counter');
+      const speed = 200;
+
+      const animateCounters = () => {
+        counters.forEach(counter => {
+          const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const inc = target / speed;
+            if (count < target) {
+              counter.innerText = Math.ceil(count + inc);
+              setTimeout(updateCount, 1);
+            } else {
+              counter.innerText = target + '+';
+            }
+          };
+          updateCount();
+        });
+      };
+
+      // Trigger counter animation when stats section is in view
+      const statsSection = document.querySelector('.stats-section');
+      if (statsSection) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              animateCounters();
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        observer.observe(statsSection);
+      }
+
+      // Animate skill bars when in view
+      const skillBars = document.querySelectorAll('.skill-progress');
+      const skillObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.width = entry.target.getAttribute('data-width');
+          }
+        });
+      }, { threshold: 0.5 });
+
+      skillBars.forEach(bar => skillObserver.observe(bar));
+
       function navigateToCV() {
         window.location.href = 'https://drive.google.com/file/d/1hUI3qy3lvvb516YGBdOU3_2h1__P0DMv/view?usp=sharing';
       }
+
       document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', () => {
-      // Toggle active class to flip the card
-      card.classList.toggle('active');
-    });
-  });
+        card.addEventListener('click', () => {
+          card.classList.toggle('active');
+        });
+      });
 
+      // Tilt effect on cards
+      document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = (y - centerY) / 10;
+          const rotateY = (centerX - x) / 10;
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+        });
+      });
 
+      // Gallery Filter Functionality
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterBtns.forEach(b => b.classList.remove('active'));
+          // Add active class to clicked button
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-filter');
+
+          galleryItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+              item.classList.remove('hidden');
+              item.style.animation = 'fadeIn 0.5s ease forwards';
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // Add fadeIn animation
+      const style = document.createElement('style');
+      style.textContent = `
+        @keyframes fadeIn {
+          from { opacity: 0; transform: scale(0.9); }
+          to { opacity: 1; transform: scale(1); }
+        }
+      `;
+      document.head.appendChild(style);
     </script>
-    
+
   </body>
 </html>
