@@ -2692,3 +2692,444 @@ body.dark-mode .project-tech span {
     font-size: 0.8rem;
   }
 }
+
+/* =========================================
+   COMPREHENSIVE MOBILE RESPONSIVE FIXES
+========================================= */
+
+/* Mobile - 768px and below */
+@media (max-width: 768px) {
+  /* Section Titles */
+  .section-title {
+    font-size: 1.8rem !important;
+    padding-bottom: 15px;
+  }
+
+  .sec-icon i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+  }
+
+  /* Hero Section */
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-container .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Experience Section */
+  .experience-timeline::before {
+    left: 15px;
+  }
+
+  .experience-card {
+    margin-left: 35px;
+    padding: 20px 15px;
+  }
+
+  .experience-card::before {
+    left: -28px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .company-logo-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .company-name {
+    font-size: 1.1rem;
+  }
+
+  .job-title {
+    font-size: 0.85rem;
+  }
+
+  .experience-meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .experience-list li {
+    font-size: 0.85rem;
+  }
+
+  .experience-tech {
+    gap: 6px;
+  }
+
+  .experience-tech span {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+  }
+
+  /* Education Section */
+  .education-card {
+    padding: 20px 15px;
+  }
+
+  .education-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .education-icon i {
+    font-size: 1.5rem;
+  }
+
+  .education-title {
+    font-size: 1.2rem;
+  }
+
+  .education-badge {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+
+  /* Skills Section */
+  .tech-stack-icons {
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .tech-icon-item {
+    padding: 8px;
+  }
+
+  .tech-icon-item i {
+    font-size: 1.8rem;
+  }
+
+  .tech-icon-item span {
+    font-size: 0.7rem;
+  }
+
+  .skill-card {
+    padding: 20px 15px;
+  }
+
+  .skill-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .skill-icon i {
+    font-size: 1.4rem;
+  }
+
+  .skill-card-title {
+    font-size: 1rem;
+  }
+
+  .skill-tags span {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  /* Language Badges */
+  .language-badges {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .language-badge {
+    padding: 12px 20px;
+  }
+
+  .btn-download-cv {
+    padding: 12px 30px;
+    font-size: 0.9rem;
+  }
+
+  /* Books Section */
+  .book-cover {
+    height: 220px;
+  }
+
+  .book-info {
+    padding: 15px;
+  }
+
+  .book-title {
+    font-size: 1rem;
+  }
+
+  .book-category {
+    font-size: 0.65rem;
+  }
+
+  /* Featured Projects */
+  .project-header {
+    height: 140px;
+  }
+
+  .project-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .project-icon i {
+    font-size: 2rem;
+  }
+
+  .project-body {
+    padding: 20px 15px;
+  }
+
+  .project-card-new .project-title {
+    font-size: 1.1rem;
+  }
+
+  .github-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  /* Gallery Carousel */
+  .gallery-carousel-wrapper {
+    padding: 10px 0;
+  }
+
+  .gallery-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .gallery-prev {
+    left: -10px;
+  }
+
+  .gallery-next {
+    right: -10px;
+  }
+
+  .slide-info {
+    padding: 15px;
+  }
+
+  .slide-info h4 {
+    font-size: 1rem;
+  }
+
+  .slide-info p {
+    font-size: 0.8rem;
+  }
+
+  /* Demo Projects */
+  .demo-video-card .demo-video {
+    height: 200px;
+  }
+
+  /* Awards Section */
+  .award-card {
+    padding: 20px 15px;
+  }
+
+  .award-icon-wrapper {
+    width: 55px;
+    height: 55px;
+  }
+
+  .award-icon-wrapper i {
+    font-size: 1.4rem;
+  }
+
+  .award-title {
+    font-size: 1rem;
+  }
+
+  /* View All Card */
+  .view-all-card {
+    min-height: 200px;
+  }
+
+  .view-all-content i {
+    font-size: 2rem;
+  }
+
+  .view-all-content h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Stats Section */
+  .stat-item h2 {
+    font-size: 2rem;
+  }
+
+  .stat-item p {
+    font-size: 0.85rem;
+  }
+
+  /* Navbar Photo */
+  .navbar-photo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Extra Small Mobile - 480px and below */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .sec-icon i {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.3rem;
+  }
+
+  /* Experience */
+  .experience-card {
+    margin-left: 30px;
+    padding: 15px 12px;
+  }
+
+  .experience-timeline::before {
+    left: 10px;
+  }
+
+  .experience-card::before {
+    left: -25px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .company-logo-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+
+  .experience-list li {
+    font-size: 0.8rem;
+    gap: 8px;
+  }
+
+  /* Skills */
+  .tech-icon-item i {
+    font-size: 1.5rem;
+  }
+
+  .skill-card {
+    padding: 15px;
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Books */
+  .book-cover {
+    height: 180px;
+  }
+
+  /* Projects */
+  .project-header {
+    height: 120px;
+  }
+
+  .project-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .project-icon i {
+    font-size: 1.6rem;
+  }
+
+  /* Gallery */
+  .gallery-nav-btn {
+    position: static;
+    margin: 20px 10px 0;
+  }
+
+  .gallery-carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-slide img {
+    max-height: 200px;
+  }
+
+  /* Filter Buttons */
+  .gallery-filter {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  /* Awards */
+  .awards-grid {
+    gap: 15px;
+  }
+
+  /* Demo Videos */
+  .demo-video-card .demo-video {
+    height: 180px;
+  }
+}
+
+/* Fix overflow issues on mobile */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  /* Prevent horizontal scroll */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
