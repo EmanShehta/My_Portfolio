@@ -45,7 +45,7 @@ a {
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #FF7D39 !important;
+  color: #00B4D8 !important;
 }
 
 .navbar-brand .uil {
@@ -102,14 +102,14 @@ b, strong {
   transition: all 0.4s ease;
 }
 .custom-btn:hover {
-  color: #FF7D39;
+  color: #00B4D8;
 }
 .custom-btn.custom-btn-bg {
   background: #474559;
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
-  background: #FF7D39;
+  background: #00B4D8;
   color: #ffffff !important;
 }
 
@@ -126,7 +126,7 @@ b, strong {
 }
 
 .animated-item {
-  color: #FF7D39;
+  color: #00B4D8;
 }
 .animated-item {
   font-size: 38px;
@@ -228,7 +228,7 @@ b, strong {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #FF7D39;
+  color: #00B4D8;
   font-weight: bold;
 }
 .navbar-light .navbar-nav .nav-link:focus span,
@@ -320,7 +320,7 @@ b, strong {
 
 }
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
-  color: #FF7D39;
+  color: #00B4D8;
 }
 .dark-mode .navbar[class*="headroom--not-top"] {
   background: #0c0c0d;
@@ -422,7 +422,7 @@ b, strong {
   font-size: inherit;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
-  color: #FF7D39;
+  color: #00B4D8;
 }
 .owl-theme .owl-dots .owl-dot {
   outline: none;
@@ -454,10 +454,10 @@ b, strong {
   height: 48px;
 }
 .contact-form .form-control:hover, .contact-form .form-control:focus {
-  border-color: #FF7D39;
+  border-color: #00B4D8;
 }
 .contact-form .submit-btn {
-  background: #FF7D39;
+  background: #00B4D8;
   border-radius: 50px;
   color: #ffffff;
   font-weight: bold;
@@ -486,7 +486,7 @@ b, strong {
   margin: 5px 0;
 }
 .social-links .uil:hover {
-  color: #FF7D39;
+  color: #00B4D8;
 }
 
 @media (min-width: 1270px) {
@@ -707,7 +707,7 @@ display: none; /* Chrome, Safari, Opera */
 }
 
 .list-inline-item:hover .fa-stack-2x {
-  color: #FF7D39; /* Change color to black on hover */
+  color: #00B4D8; /* Change color to black on hover */
 }
 .skill h2 {
   font-size: 2.5rem;
@@ -764,14 +764,14 @@ display: none; /* Chrome, Safari, Opera */
 }
 
 .button {
-  border: 2px solid orange;
-  color: orange;
+  border: 2px solid #00B4D8;
+  color: #00B4D8;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button:hover {
-  background-color: orange;
-  color: #726767;
+  background-color: #00B4D8;
+  color: #ffffff;
 }
 
 .b-span.wht {
