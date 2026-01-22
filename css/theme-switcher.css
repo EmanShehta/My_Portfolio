@@ -3,12 +3,12 @@
    5 Modern Professional Color Themes
 ========================================= */
 
-/* CSS Custom Properties - Default Theme (Teal) */
+/* CSS Custom Properties - Default Theme (Orange) */
 :root {
-  --theme-primary: #00B4D8;
-  --theme-secondary: #0891B2;
-  --theme-rgb: 0, 180, 216;
-  --theme-name: 'teal';
+  --theme-primary: #FF7D39;
+  --theme-secondary: #FF5722;
+  --theme-rgb: 255, 125, 57;
+  --theme-name: 'orange';
 }
 
 /* Theme 1: Teal/Cyan (Default) */

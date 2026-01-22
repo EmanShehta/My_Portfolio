@@ -16,9 +16,9 @@
     { name: 'orange', label: 'Orange', primary: '#FF7D39', secondary: '#FF5722' }
   ];
 
-  // Get saved theme or default to 'teal'
+  // Get saved theme or default to 'orange'
   function getSavedTheme() {
-    return localStorage.getItem('portfolio-theme') || 'teal';
+    return localStorage.getItem('portfolio-theme') || 'orange';
   }
 
   // Save theme to localStorage
