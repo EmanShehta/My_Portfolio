@@ -1510,11 +1510,29 @@ body.dark-mode .book-title {
 .book-author {
   color: #888;
   font-size: 0.85rem;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 body.dark-mode .book-author {
   color: #aaa;
+}
+
+.book-time {
+  color: #ff7d39;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.book-time i {
+  font-size: 0.75rem;
+}
+
+body.dark-mode .book-time {
+  color: #ff7d39;
 }
 
 /* Reading Progress Bar */
@@ -3142,6 +3160,7 @@ body.dark-mode .project-tech span {
   /* Books Section - Stack Vertically */
   .books-section .row.g-4 {
     flex-direction: column;
+    gap: 25px !important;
   }
 
   .books-section .col-lg-3,
@@ -3149,7 +3168,7 @@ body.dark-mode .project-tech span {
     width: 100%;
     max-width: 100%;
     flex: 0 0 100%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .book-card-modern {
@@ -3159,6 +3178,35 @@ body.dark-mode .project-tech span {
 
   .book-cover {
     height: 250px;
+  }
+
+  /* Education Section Mobile Spacing */
+  .education-section {
+    margin-top: 40px !important;
+    padding-top: 50px !important;
+  }
+
+  .education-section .text-muted {
+    margin-bottom: 30px !important;
+  }
+
+  .education-section .row.g-4 {
+    gap: 25px !important;
+  }
+
+  .education-section .col-lg-6 {
+    margin-bottom: 20px;
+  }
+
+  /* Books Section Bottom Spacing */
+  .books-section {
+    padding-bottom: 50px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .books-section .col-lg-3:last-child,
+  .books-section .col-md-6:last-child {
+    margin-bottom: 0;
   }
 
   /* Demo Projects - Stack Vertically */
