@@ -6,14 +6,14 @@
 (function() {
   'use strict';
 
-  // Available themes
+  // Available themes — refined, professional palette (no flashy colors)
   const themes = [
-    { name: 'teal', label: 'Teal', primary: '#00B4D8', secondary: '#0891B2' },
-    { name: 'purple', label: 'Purple', primary: '#8B5CF6', secondary: '#7C3AED' },
-    { name: 'emerald', label: 'Emerald', primary: '#10B981', secondary: '#059669' },
-    { name: 'rose', label: 'Rose', primary: '#F43F5E', secondary: '#E11D48' },
-    { name: 'blue', label: 'Blue', primary: '#3B82F6', secondary: '#2563EB' },
-    { name: 'orange', label: 'Orange', primary: '#FF7D39', secondary: '#FF5722' }
+    { name: 'blue',    label: 'Indigo',    primary: '#3730A3', secondary: '#312E81' },
+    { name: 'teal',    label: 'Deep Teal', primary: '#0F766E', secondary: '#115E59' },
+    { name: 'emerald', label: 'Forest',    primary: '#166534', secondary: '#14532D' },
+    { name: 'rose',    label: 'Wine',      primary: '#9F1239', secondary: '#881337' },
+    { name: 'purple',  label: 'Plum',      primary: '#6B21A8', secondary: '#581C87' },
+    { name: 'orange',  label: 'Bronze',    primary: '#B45309', secondary: '#92400E' }
   ];
 
   // Get saved theme or default to 'orange'
